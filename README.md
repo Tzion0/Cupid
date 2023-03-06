@@ -1,12 +1,12 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/Tzion0/Cupid"><img src="https://github.com/Tzion0/Cupid/blob/main/cupid-logo.jpg" width="500" height="500" alt="Cupid"></a>
+  <a href="https://github.com/Tzion0/Cupid"><img src="https://github.com/Tzion0/Cupid/blob/main/cupid-logo.jpg" width="350" height="350" alt="Cupid"></a>
   <br>
   Cupid
   <br>
 </h1>
 
-Cupid, a python script that send random HTTP traffic with love, specifically designed for Attack & Defense (A&D) Competition.
+Cupid, a python script that send random HTTP traffic with "love", specifically designed for Attack & Defense (A&D) Competition.
 
 ## Table of Contents
 
