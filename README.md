@@ -62,6 +62,9 @@ options:
 This project has been inspired by
 * [Noisy](https://github.com/1tayH/noisy/)
 
+## Todo
+- Update logging for informative percentage of packet sent for each teams
+
 ## License
 
 This project is licensed under the GNU GPLv3 License - see the [LICENSE](LICENSE) file for details
