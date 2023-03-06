@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/Tzion0/Cupid"><img src="https://github.com/Tzion0/Cupid/cupid-logo.jpg" alt="Cupid"></a>
+  <a href="https://github.com/Tzion0/Cupid"><img src="https://github.com/Tzion0/Cupid/blob/main/cupid-logo.jpg" alt="Cupid"></a>
   <br>
   Cupid
   <br>
