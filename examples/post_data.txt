@@ -1,0 +1,3 @@
+test=123
+admin=true
+email=test@test.com

