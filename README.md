@@ -19,7 +19,7 @@ Cupid, a python script that send random HTTP traffic with "love", specifically d
 
 Detailed instructions on how to install the project and its dependencies.
 ```
-git clone <URL>
+git clone https://github.com/Tzion0/Cupid.git
 cd cupid
 pip3 install -r requirements.txt
 ```
