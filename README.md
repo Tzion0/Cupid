@@ -12,7 +12,8 @@ Cupid, a python script that send random HTTP traffic with "love", specifically d
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Notes](#notes)
+- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ## Installation
