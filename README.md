@@ -13,11 +13,8 @@ Cupid, a python script that send random HTTP traffic with love, specifically des
 
 Detailed instructions on how to install the project and its dependencies.
 ```
-# Clone the repository
 git clone <URL>
-# Navigate to the repository directory
 cd cupid
-# Install the dependencies required
 pip3 install -r requirements.txt
 ```
 
@@ -47,6 +44,7 @@ options:
 - The config file should contain all configuration information; command-line arguments are merely for convenience
 - Command-line parameters are given precedence over configuration files and will take precedence
 - The key (option) name ends with `_file` in config file will override the value of key (option) name without `_file`
+
     ```
     E.g. user_agents_file will override user_agents option's value 
     ```
@@ -59,4 +57,4 @@ This project has been inspired by
 
 ## License
 
-This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GPLv3 License - see the [LICENSE](LICENSE) file for details
