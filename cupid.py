@@ -37,7 +37,11 @@ class Arrow:
         Default number of fake flags: 50
         """
         for i in range(50):
-            self._config["post_request_data"].append({"flag":self._config["flag_format"] if "flag_format" in self._config else "FLAG" + "{" + hashlib.md5(f"{random.randint(i,i+50)}".encode('utf-8')).hexdigest() + "}"})
+            if "flag_format" in self._config:
+                flag_format = self._config["flag_format"]
+            else:
+                flag_format = "FLAG"
+            self._config["post_request_data"].append({"flag": flag_format + "{" + hashlib.md5(f"{random.randint(i,i+50)}".encode('utf-8')).hexdigest() + "}"})
 
     def _set_option_default_value(self):
         """
@@ -72,11 +76,12 @@ class Arrow:
             if isinstance(self._config["payload"], list):
                 for p in self._config["payload"]:
                     words = re.sub('['+string.punctuation.replace(".","")+']', ' ', p).split()
+                    for word in words:
+                        self._config["request_dir"].append(word)
             else:
-                words = re.sub('['+string.punctuation.replace(".","")+']', ' ', self._config["payload"]).split()
-            
-            for word in words:
-                self._config["request_dir"].append(word)
+                words = re.sub('['+string.punctuation.replace(".","")+']', ' ', self._config["payload"]).split() 
+                for word in words:
+                    self._config["request_dir"].append(word)
 
     def load_config(self, file_path):
         """
@@ -176,8 +181,9 @@ class Cupid:
                 if "timeout" in self._config:
                     self._is_timeout_reached()
 
-                # Request send every few second(s). Default: 1 or 2 seconds
-                time.sleep(int(self._config["sleep"]) if "sleep" in self._config else random.randint(1,2))
+                # Request send every few second(s). Default: 0 seconds
+                if "sleep" in self._config:
+                    time.sleep(int(self._config["sleep"]))
 
                 # Log the responses
                 for r in get_responses:
